@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Login({ login }) {
   const [email, setEmail] = useState("");
@@ -65,7 +65,9 @@ function Login({ login }) {
 
           <p className="text-sm text-center mt-4">
             Don’t have an account?{" "}
-            <a href="/signup" className="link link-primary">Sign Up</a>
+            <Link to="/signup" className="link link-primary">
+              Sign Up
+            </Link>
           </p>
         </form>
       </div>
